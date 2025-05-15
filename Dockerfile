@@ -1,5 +1,7 @@
-FROM openjdk:17
-EXPOSE 8081
-ADD target/demo.jar demo.jar
-ENTRYPOINT ["java","-jar","/demo.jar"]
+FROM openjdk:17-alpine
+EXPOSE 8085
+add	 target/*jar demo.jar
+ENTRYPOINT ["java", "-jar","/demo.jar]
    
+   
+  
